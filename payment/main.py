@@ -34,8 +34,12 @@ def all():
 
 def format(pk: str):
     o = Order.get(pk)
-    req = requests.get('http://localhost:8001/products/%s' % o.p_id)
-    p = req.json()
+    p = {}
+    try:
+        req = requests.get('http://localhost:8001/products/%s' % o.p_id)
+        p = req.json()
+    except:
+        p['name'] = o.p_id
     return {
         'id': pk,
         'p_name': p['name'],
