@@ -5,9 +5,9 @@ from redis_om import get_redis_connection, HashModel
 app = FastAPI()  # gọi constructor và gán vào var app
 
 redis = get_redis_connection(
-    host='redis-18501.c1.ap-southeast-1-1.ec2.cloud.redislabs.com',
-    port=18501,
-    password='E6r6fkC2tA4MFZfYbBrKAXAEBNtNRLdc',
+    host='redis-18590.c252.ap-southeast-1-1.ec2.cloud.redislabs.com',
+    port=18590,
+    password='BLrpew57FziE3KCavUrBuCQMkcveawbG',
     decode_responses=True
 )
 

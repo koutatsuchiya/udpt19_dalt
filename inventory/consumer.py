@@ -19,7 +19,7 @@ while True:
                 obj = r[1][0][1]
                 try:
                     p = Product.get(obj['p_id'])
-                    p.quantity -= int(obj['quantity'])
+                    p.quantity = p.quantity - int(obj['quantity'])
                     p.save()
                 except:
                     redis.xadd('refund_order', obj, '*')
