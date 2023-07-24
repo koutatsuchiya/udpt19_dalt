@@ -7,7 +7,7 @@ pip install -r requirements.txt
 ## Architecture
 <img src="https://github.com/koutatsuchiya/udpt19_dalt/assets/85290205/6083a044-b323-4394-abdd-4c8dd0434498" alt="Alt Text" width="600px" height="630px">
 
-[Code description](bit.ly/46Yj08J)
+[Code description](https://bit.ly/46Yj08J)
 
 ## Demo
 [Video](https://youtu.be/kc9fc6C7zUM)
